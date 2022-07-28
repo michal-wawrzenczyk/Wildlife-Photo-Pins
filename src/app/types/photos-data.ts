@@ -1,11 +1,11 @@
-import { Provinces } from '../components/main/filter/province';
+import { Province } from '../components/filter/filters/province';
 
 export interface Location {
-    lat?: number;
-    lon?: number;
-    city?: string;
-    province?: Provinces;
-  }
+  lat?: number;
+  lon?: number;
+  city?: string;
+  province?: Province;
+}
 
 export interface PhotosData {
   author: string;
@@ -16,4 +16,6 @@ export interface PhotosData {
   uploadTimeStamp: number;
   description?: string;
   location?: Location;
+  avgValue: number | null;
+  ratingValues: number[];
 }

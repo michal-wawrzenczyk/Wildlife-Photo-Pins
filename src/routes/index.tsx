@@ -6,7 +6,7 @@ import { WEB_PATHS } from './paths';
 import { MainLayout } from '../app/layout/main';
 import { UniversalLayout } from '../app/layout/universal';
 import { UserLayout } from '../app/layout/user';
-import { Filter } from '../app/components/main/filter/Filter';
+import { Filter } from '../app/components/filter/Filter';
 
 const LoadingPage =
   (Component: React.ElementType) =>

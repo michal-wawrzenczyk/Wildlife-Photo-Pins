@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { DetailsCard } from '../app/components/main/photos/gallery/DetailsCard';
-import { Map } from '../app/components/main/photos/map/Map';
+import { DetailsCard } from '../app/components/photos/gallery/DetailsCard';
+import { Map } from '../app/components/photos/map/Map';
 
 const PhotoDetailsContainer = styled.div`
   display: flex;

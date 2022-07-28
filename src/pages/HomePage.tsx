@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Main } from '../app/components/main/Main';
+import { Main } from '../app/components/Main';
 
 export const HomePageContainer = styled.div`
   display: flex;

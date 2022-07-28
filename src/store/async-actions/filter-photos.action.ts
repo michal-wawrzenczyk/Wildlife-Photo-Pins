@@ -1,5 +1,5 @@
 import { AppThunkAction } from '../reducers/rootReducer';
-import { DUMMY_PHOTOS } from '../../app/components/mock/mock';
+import { DUMMY_PHOTOS } from '../../assets/mock';
 import {
   Categories,
   Ifilters,
@@ -7,7 +7,6 @@ import {
   setFilters
 } from '../slices/gallery';
 import { PhotosData } from '../../app/types/photos-data';
-// import { Provinces } from '../../app/components/main/filter/province';
 
 // back-end simulation:
 const getFilteredData = ({
@@ -19,21 +18,6 @@ const getFilteredData = ({
   let data = [...DUMMY_PHOTOS];
 
   return new Promise((resolve) => {
-    // if (filter === 'All pictures') {
-    //   const data = DUMMY_PHOTOS;
-    // } else {
-    //   const data = DUMMY_PHOTOS.filter((picture) => {
-    //     return picture.category === filter;
-    //   });
-    // }
-
-    // const data =
-    //   filter === 'All pictures'
-    //     ? DUMMY_PHOTOS
-    //     : DUMMY_PHOTOS.filter((picture) => {
-    //         return picture.category === filter;
-    //       });
-
     if (category) {
       if (category === Categories.ALL_PICTURES) {
         // data = data;
